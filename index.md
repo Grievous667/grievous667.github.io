@@ -33,6 +33,8 @@ Game Information: https://grievous667.github.io/game_info
 
 ### Objectives:
 - Implement card input method.
-- Update running document
+- Update running document.
+- Depth-first search algorithm.
+- Determine algorithm patterns by hand.
 - Monte Carlo Search Tree: https://www.cs.swarthmore.edu/~mitchell/classes/cs63/f20/reading/mcts.html
 
