@@ -7,6 +7,7 @@
   - 3 Seed/Tree Tiles
   - 2 Fish/Bird Tiles
   - 1 Sun/Moon Tile
+
 ### Objectives:
 - Finish code/implement correct tile generation. 
 - Play game/search for patterns.
@@ -22,6 +23,7 @@
   - ₉C₁ * ₈C₂ * ₆C₃ * ₃C₃ * 2⁹ = 2,580,480
 - Total moves on a given turn calculated:
   - 21
+
 ### Objectives:
 - Implement card input method.
 - Update running document
