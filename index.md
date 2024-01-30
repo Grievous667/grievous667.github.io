@@ -23,7 +23,20 @@ Game Information: https://grievous667.github.io/game_info
 ## Jan 29, 2024
 ### Accomplished:
 - Shifting Stones program tile generation corrected.
-- Tile nomenclature recorded
+- Tile nomenclature recorded.
+  - Grid convention:
+    - [a0 a1 a2]
+    - [b0 b1 b2]
+    - [c0 c1 c2]
+  - Tile convention:
+    - Sun: A1
+    - Moon A2
+    - Fish: B1
+    - Bird: B2
+    - Horse: C1
+    - Boat: C2
+    - Seed: D1
+    - Tree: D2
 - Code organized.
 - Code modularized.
 - Total possible grid configurations calculated:
