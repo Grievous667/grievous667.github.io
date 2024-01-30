@@ -1,3 +1,4 @@
+Game Information: https://grievous667.github.io/game_info
 # MRS: Shifting Stones Running Documentation 
 ## Overarching Objectives:
 - Determine and implement an algorithm that finds an optimal set of moves to get the board to a given state.
