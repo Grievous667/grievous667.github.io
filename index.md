@@ -1,4 +1,10 @@
 # MRS: Shifting Stones Running Documentation 
+## Overarching Objectives:
+- Determine and implement an algorithm that finds an optimal set of moves to get the board to a given state.
+- Determine and implement an algorithm that performs one turn optimal play.
+- Determine the longest a game can run with optimal play (?).
+
+
 ## Jan 24, 2024
 ### Accomplished:
 - Basic Shifting Stones computer program created.
