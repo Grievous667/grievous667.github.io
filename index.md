@@ -8,7 +8,7 @@ permalink: /
 
 ## Basic Game Info
 
-Shifting Stones is a game played on a $$ 3 \cross 3 $$ grid of tiles. There are a total of 9 tiles, each belonging to one of four
+Shifting Stones is a game played on a $$ 3 \times 3 $$ grid of tiles. There are a total of 9 tiles, each belonging to one of four
 tile types. Each tile has two faces, so there are a total of 8 possible faces that any given grid position could contain. The
 breakdown of tiles is as follows:
 
