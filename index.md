@@ -1,53 +1,40 @@
-[Game Information](https://grievous667.github.io/game_info)
-# MRS: Shifting Stones Running Documentation 
-## Overarching Objectives:
-- Determine and implement an algorithm that finds an optimal set of moves to get the board to a given state.
-- Determine and implement an algorithm that performs one turn optimal play.
-- Determine the longest a game can run with optimal play (?).
+---
+layout: default
+title: Shifting Stones - Math Research Seminar Spring 2024
+permalink: /
+---
 
+# Home
 
-## Jan 24, 2024
-### Accomplished:
-- Basic Shifting Stones computer program created.
-- Tile breakdown:
-  - 3 Boat/Horse Tiles
-  - 3 Seed/Tree Tiles
-  - 2 Fish/Bird Tiles
-  - 1 Sun/Moon Tile
+## Basic Game Info
 
-### Objectives:
-- Finish code/implement correct tile generation. 
-- Play game/search for patterns.
-- Create tile/grid naming system.
-  
-## Jan 29, 2024
-### Accomplished:
-- Shifting Stones program tile generation corrected.
-- Tile nomenclature recorded.
-  - Grid convention:
-    - [a0 a1 a2]
-    - [b0 b1 b2]
-    - [c0 c1 c2]
-  - Tile convention:
-    - Sun: A1
-    - Moon A2
-    - Fish: B1
-    - Bird: B2
-    - Horse: C1
-    - Boat: C2
-    - Seed: D1
-    - Tree: D2
-- Code organized.
-- Code modularized.
-- Total possible grid configurations calculated:
-  - ₉C₁ * ₈C₂ * ₆C₃ * ₃C₃ * 2⁹ = 2,580,480
-- Total moves on a given turn calculated:
-  - 21
+Shifting Stones is a game played on a $$ 3 \times 3 $$ grid of tiles. There are a total of 9 tiles, each belonging to one of four
+tile types. Each tile has two faces, so there are a total of 8 possible faces that any given grid position could contain. The
+breakdown of tiles is as follows:
 
-### Objectives:
-- Implement card input method.
-- Update running document.
-- Depth-first search algorithm.
-- Determine algorithm patterns by hand.
-- Monte Carlo Search Tree: https://www.cs.swarthmore.edu/~mitchell/classes/cs63/f20/reading/mcts.html
+- 1 tile with Sun/Moon faces
+- 2 tiles with Fish/Bird faces
+- 3 Tiles with Horse/Boat faces
+- 3 Tiles with Tree/Seed faces
 
+The objective of the game is to match patterns given on cards to the grid. Players start with four cards. The goal of the game is 
+to arrange to game board in such a way that the board matches a pattern on a card in your hand. For example, a player might want to
+arrange the grid so that a horse is directly above a boat. On a turn, a player can discard one or more of their cards to move a tile
+either horizontally or vertically (but not diagonally). You get one move for each card you discard. Alternatively, a player can choose
+to skip their turn to draw two more cards, but they cannot do this two turns in a row.
+
+## Site Map
+
+## Click the links below or the buttons in the header to vist site pages
+
+## [Home](/home)
+
+Home page and general info
+
+## [Running Documentation](/docs)
+
+Weekly updates on progress we made and objectives for the next week
+
+## [Proofs and Explainations](/proofs)
+
+Mathematical proofs and explainations of concepts used and applied within the project
