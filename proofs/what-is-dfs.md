@@ -4,6 +4,7 @@ title: Proofs and Explainations
 description: "\"How does that work?\""
 permalink: /proofs/what-is-dfs
 ---
+
 # What is Depth-First Search (DFS)?
 
 ## Definition
@@ -26,12 +27,14 @@ store the nodes adjacent to those nodes that will be visited next. When a node i
 as such by adding it to the `visited` collection, and all nodes adjacent to that node are added to the
 `stack` collection. The algorithm finishes once every node has been visited.
 
-Here is a visualization of a DFS algorithm running on a graph with the root node as `0``:
+Here is a visualization of a DFS algorithm running on a graph with the root node as `2`:
 
 ![DFS Example](https://media.geeksforgeeks.org/wp-content/uploads/20200507075041/ezgif.com-gif-maker7.gif "DFS Example") \\
 *Image Source: [GeeksForGeeks](https://media.geeksforgeeks.org/wp-content/uploads/20200507075041/ezgif.com-gif-maker7.gif)*
 
-Let's go through what's happening step by step.
+## Depth-First Search Step-by-Step
+
+Let's go through a pass of a DFS algorithm step by step.
 
 1. Intially, every graph node is unvisited, and no nodes are up next to be visited.
 ![DFS Step 1](https://media.geeksforgeeks.org/wp-content/uploads/20230510170648/DFS-(1)-copy.webp "DFS Step 1") \\
