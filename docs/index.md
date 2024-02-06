@@ -27,7 +27,7 @@ to skip their turn to draw two more cards, but they cannot do this two turns in 
 
 ## Click the links below or the buttons in the header to vist site pages
 
-## [Home](/home)
+## [Home](/)
 
 Home page and general info
 
