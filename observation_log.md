@@ -33,26 +33,30 @@ because that tile could be closest to another slot that needs it.
 ### Tree Search
 
 - For optimal memory shenanigans, tile grids can be represented in a minimum of 27 bits. There are eight tile types, meaning every type can be represented in
-3 bits, as `2³ = 8`. And `3 × 9 = 27`, which is where we get our total. The convention we're running with is as follows:
+3 bits, as $$2^3 = 8$$. And $$3 \cdot 9 = 27$$, which is where we get our total. The convention we're running with is as follows:
 
-| 000 | 001 | 010 | 011 | 100 | 101 | 110 | 111 |
-|-----|-----|-----|-----|-----|-----|-----|-----|
-| Sun |Moon |Fish |Bird |Horse|Boat |Seed |Tree |
+| 000 | 001  | 010  | 011  | 100   | 101  | 110  | 111  |
+|-----|------|------|------|-------|------|------|------|
+| Sun | Moon | Fish | Bird | Horse | Boat | Seed | Tree |
 
 
 - As such, the binary string `000 010 100 111 111 101 011 110 100` would represent a grid as follows:
 
-|      | 0   | 1 |  2  |
-|------|-----|---|-----|
-|     0| Sun |Fish|Horse|
-|     1| Tree|Tree|Boat|
-|     2| Bird|Seed|Horse|
+|       | 0    | 1    |  2    |
+|-------|------|------|-------|
+| **0** | Sun  | Fish | Horse |
+| **1** | Tree | Tree | Boat  |
+| **2** | Bird | Seed | Horse |
 
 - This requires interpretation after retrieving a tree, but massively reduces the memory demands of storing the results of a tree search. Tree transversal would also be 
 much faster.
 - Binary strings are also easy to mask. Modifications to the stored trees could also potentially be applied via bit shifting.  
 
+### Parity of Point Sums
 
+Each individidual board has either an even or odd number of "moved" point-sum values but not both. Take for example a board with an optimal point sum value of 3.
+In this scenario, all other possible ways to reach the success state all have an odd point sum value. The same case is true for even point sum values. No board
+combination will have both odd and even point sum values for a specific target in a specific position on the board.
 
   
     
