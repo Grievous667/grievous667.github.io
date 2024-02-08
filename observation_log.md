@@ -1,3 +1,9 @@
+---
+layout: default
+title: Observation Log
+permalink: /
+---
+
 ### Algorithms
 One Target Optimal Play:
 - A single tile target card can be solved fairly easily. The algorithm simply needs to calculate the x-distance and the y-distance of each valid card from the target location, add one to the count if a flip is necessary, 
