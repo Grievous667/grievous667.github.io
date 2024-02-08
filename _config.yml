@@ -20,9 +20,7 @@
 
 title: Shifting Stones - Math Research Seminar Spring 2024
 email: your-email@example.com
-description: >- 
-  A progress log and note repository for work on the
-  Shifting Stones project.
+description: A progress log and note repository for work on the Shifting Stones project.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://grievous667.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
