@@ -63,3 +63,28 @@ permalink: /docs
   - [Depth First Search (DFS)](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)
   - [Monte Carlo Tree Search (MCTS)](https://www.cs.swarthmore.edu/~mitchell/classes/cs63/f20/reading/mcts.html)
 - Prepare DFS explanation ([explanation](proofs/what-is-dfs))
+
+## Feb 5, 2024
+
+### Accomplished
+
+- Shifting Stones program graphics updated
+- Shifting Stones program interface added
+- Target cards encoded
+- Tree search algorithm started
+- Patterns identified:
+  - Distance to target state can be measured in a point value system which increments for every one move necessary to move the appropriate tiles into position
+  - An algorithm that operates on the point value system needs to check all possible point values (or at least the ones likely to be low) and find the optimal path from there
+    - This algorithm needs to check for and execute all possible moves that decrease the total point value by two
+- Challenges Identified:
+  - Cards with multiple success states
+  - Identifying move patterns that will decrement the point value by two consistently 
+
+### Objectives
+
+- Implement hand system into program
+- Find an algorithm to solve simple target cards
+- Rigurously define total point value/point sum
+- Formally articulate challenges
+- Finalize terminology
+- Finalize website for record keeping/running notes
