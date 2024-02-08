@@ -38,3 +38,7 @@ Weekly updates on progress we made and objectives for the next week
 ## [Proofs and Explainations](/proofs)
 
 Mathematical proofs and explainations of concepts used and applied within the project
+
+## [Observation Log](/log)
+
+A collection of ideas and observations we've had while working on the project
