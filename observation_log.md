@@ -29,3 +29,30 @@ can represent these isses. In the first case, the point sum value changes by zer
 - There are complications in calculating this. Just calculating it by taking the closest valid tile might not work,
 because that tile could be closest to another slot that needs it.
 - **NOTE:** Multiple point sum values would have to be calculated and the lowest valid one (where no single tile is reserved by the algorithm twice) chosen.
+
+### Tree Search
+
+- For optimal memory shenanigans, tile grids can be represented in a minimum of 27 bits. There are eight tile types, meaning every type can be represented in
+3 bits, as `2³ = 8`. And `3 × 9 = 27`, which is where we get our total. The convention we're running with is as follows:
+
+| 000 | 001 | 010 | 011 | 100 | 101 | 110 | 111 |
+|-----|-----|-----|-----|-----|-----|-----|-----|
+| Sun |Moon |Fish |Bird |Horse|Boat |Seed |Tree |
+
+
+- As such, the binary string `000 010 100 111 111 101 011 110 100` would represent a grid as follows:
+
+|      | 0   | 1 |  2  |
+|------|-----|---|-----|
+|     0| Sun |Fish|Horse|
+|     1| Tree|Tree|Boat|
+|     2| Bird|Seed|Horse|
+
+- This requires interpretation after retrieving a tree, but massively reduces the memory demands of storing the results of a tree search. Tree transversal would also be 
+much faster.
+- Binary strings are also easy to mask. Modifications to the stored trees could also potentially be applied via bit shifting.  
+
+
+
+  
+    
