@@ -1,3 +1,10 @@
+---
+layout: default
+title: Game Info
+description: Terminology and Definitions
+permalink: /gameinfo
+---
+
 # Shifting Stones 
 ### Basic Info
 Shifting Stones is a game played on a 3x3 grid of tiles. There are a total of 9 tiles, each belonging to one of four tile types. 
