@@ -72,7 +72,7 @@ we multiply the number of combinations before flips by $$ 2^n $$:
 
 $$
   \begin{array}{l}
-  \rm{Total \ Configurations} &= \displaystyle {n \choose g_1} \cdot {n - g_1 \choose g_2 } \cdot \dots \cdot {n - g_1 - g_2 - \dots - g_{n - 2} \choose g_{n - 1}} \cdot \cdot {n - g_1 - g_2 - \dots - g_{n - 2} - g_{n - 1} \choose g_n} \cdot 2^n \\
+  \rm{Total \ Configurations} &= \displaystyle {n \choose g_1} \cdot {n - g_1 \choose g_2 } \cdot \dots \cdot {n - g_1 - g_2 - \dots - g_{n - 2} \choose g_{n - 1}} \cdot {n - g_1 - g_2 - \dots - g_{n - 2} - g_{n - 1} \choose g_n} \cdot 2^n \\
   &= \displaystyle \frac{n!}{g_1! \left(n - g_1\right)!} \frac{\left(n - g_1\right)!}{g_2! \left(n - g_1 - g_2\right)!} \cdot \dots \cdot \frac{\left(n - g_1 - g_2 - \dots - g_{n - 2}\right)!}{g_{n - 1}! \left(n - g_1 - g_2 - \dots - g_{n - 2} - g_{n - 1}\right)!} \cdot \frac{\left(n - g_1 - g_2 - \dots - g_{n - 2} - g_{n - 1}\right)!}{g_n! \left(n - g_1 - g_2 - \dots - g_{n - 1} - g_n\right)!} \cdot 2^n
   \end{array}
 $$
